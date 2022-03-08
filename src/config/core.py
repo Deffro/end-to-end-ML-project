@@ -27,7 +27,7 @@ class ModelConfig(BaseModel):
     target: str
     var_to_drop: str
     cat_vars_replace_na_with_string_missing: List[str]
-    ca_vars_replace_na_with_frequent: List[str]
+    cat_vars_replace_na_with_frequent: List[str]
     num_vars: List[str]
     num_vars_yeo_johnson: List[str]
     cat_vars_ordinal: List[str]

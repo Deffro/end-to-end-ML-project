@@ -14,7 +14,7 @@ cat_vars_replace_na_with_string_missing:
   - company_size
   - company_type
   
-ca_vars_replace_na_with_frequent:
+cat_vars_replace_na_with_frequent:
   - enrolled_university
   - education_level
   - experience

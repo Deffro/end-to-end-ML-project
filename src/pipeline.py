@@ -24,7 +24,7 @@ pipe = Pipeline([
     ('cat_imputer_missing',CategoricalImputer(
         imputation_method='missing', variables=config.model_config.cat_vars_replace_na_with_string_missing)),
     ('cat_imputer_frequent',CategoricalImputer(
-        imputation_method='frequent', variables=config.model_config.ca_vars_replace_na_with_frequent)),
+        imputation_method='frequent', variables=config.model_config.cat_vars_replace_na_with_frequent)),
     ('num_transformer_yeo_johnson', YeoJohnsonTransformer(
         variables=config.model_config.num_vars_yeo_johnson)),
     ('ordinal_encoder', OrdinalEncoder(
