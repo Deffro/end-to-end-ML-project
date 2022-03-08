@@ -1,0 +1,123 @@
+# Data Files
+training_data_file: train.csv
+test_data_file: test.csv
+
+# Variables
+target: target
+
+var_to_drop: enrollee_id
+
+cat_vars_replace_na_with_string_missing:
+  - gender
+  - major_discipline
+  - company_size
+  - company_type
+  
+ca_vars_replace_na_with_frequent:
+  - enrolled_university
+  - education_level
+  - experience
+  - last_new_job
+  
+num_vars:
+  - city_development_index
+  - training_hours
+
+num_vars_yeo_johnson:
+  - training_hours
+
+cat_vars_ordinal:
+  - relevent_experience
+  - enrolled_university
+  - education_level
+  - major_discipline
+
+cat_vars_ordinal_arbitrary:
+  - city
+
+cat_vars_onehot:
+  - gender
+
+cat_vars_count_frequency:
+  - company_type
+
+experience_var:
+  - experience
+  
+experience_map:
+  <1: 0
+  1: 1
+  2: 2
+  3: 3
+  4: 4
+  5: 5
+  6: 6
+  7: 7
+  8: 8
+  9: 9
+  10: 10
+  11: 11
+  12: 12
+  13: 13
+  14: 14
+  15: 15
+  16: 16
+  17: 17
+  18: 18
+  19: 19
+  20: 20
+  '>20': 21
+
+last_new_job_var:
+  - last_new_job
+  
+last_new_job_map:
+  never: 0
+  1: 1
+  2: 2
+  3: 3
+  4: 4
+  '>4': 5
+
+company_size_var:
+  - company_size
+
+company_size_map: 
+  Missing: 0
+  <10: 1
+  10/49: 2
+  50-99: 3
+  100-500: 4
+  500-999: 5
+  1000-4999: 6
+  5000-9999: 7
+  10000+: 8
+
+test_size: 0.1
+
+random_state: 43
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
