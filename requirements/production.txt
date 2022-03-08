@@ -1,6 +1,10 @@
+-r requirements.txt
+
 tox==3.24.5
 pytest==7.0.1
 black==22.1.0
 flake8==4.0.1
 mypy==0.931
 isort==5.10.1
+pydantic==1.9.0
+strictyaml==1.6.1
