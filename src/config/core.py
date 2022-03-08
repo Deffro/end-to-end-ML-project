@@ -4,7 +4,9 @@ from typing import Dict, List, Sequence
 from pydantic import BaseModel
 from strictyaml import YAML, load
 
-PACKAGE_ROOT = Path('../').resolve()
+import src
+
+PACKAGE_ROOT = Path(src.__file__).resolve().parent
 ROOT = PACKAGE_ROOT.parent
 CONFIG_FILE_PATH = PACKAGE_ROOT / "config.yml"
 DATASET_DIR = PACKAGE_ROOT / "datasets"

@@ -1,0 +1,1 @@
+In order to import files as packages we need to add the project's filepath to the Path environmental Variable.
