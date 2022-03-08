@@ -9,8 +9,18 @@ import src
 PACKAGE_ROOT = Path(src.__file__).resolve().parent
 ROOT = PACKAGE_ROOT.parent
 CONFIG_FILE_PATH = PACKAGE_ROOT / "config.yml"
-DATASET_DIR = PACKAGE_ROOT / "datasets"
+DATASET_DIR = PACKAGE_ROOT / "data"
 TRAINED_MODEL_DIR = PACKAGE_ROOT / "trained_models"
+
+
+class AppConfig(BaseModel):
+    """
+    Application-level config.
+    """
+
+    training_data_file: str
+    test_data_file: str
+    pipeline_save_file: str
 
 
 class ModelConfig(BaseModel):
@@ -37,6 +47,7 @@ class ModelConfig(BaseModel):
 class Config(BaseModel):
     """Master config object."""
 
+    app_config: AppConfig
     model_config: ModelConfig
 
 
@@ -68,6 +79,7 @@ def create_and_validate_config(parsed_config: YAML = None) -> Config:
 
     # specify the data attribute from the strictyaml YAML type.
     _config = Config(
+        app_config=AppConfig(**parsed_config.data),
         model_config=ModelConfig(**parsed_config.data),
     )
 

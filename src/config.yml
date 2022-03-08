@@ -1,6 +1,7 @@
 # Data Files
 training_data_file: train.csv
 test_data_file: test.csv
+pipeline_save_file: regression_model_output_v
 
 # Variables
 target: target
