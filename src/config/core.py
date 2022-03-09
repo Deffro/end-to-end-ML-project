@@ -45,7 +45,7 @@ class ModelConfig(BaseModel):
 
 
 class Config(BaseModel):
-    """Master config object."""
+    """Master config object. Name and match the pydantic configs"""
 
     app_config: AppConfig
     model_config: ModelConfig
