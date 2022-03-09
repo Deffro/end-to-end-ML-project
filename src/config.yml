@@ -1,7 +1,7 @@
 # Data Files
 training_data_file: train.csv
 test_data_file: test.csv
-pipeline_save_file: regression_model_output_v
+pipeline_save_file: model_v
 
 # Variables
 target: target
@@ -94,7 +94,11 @@ company_size_map:
   5000-9999: 7
   10000+: 8
 
+# Initializations
+
 test_size: 0.1
+
+# Model specific
 
 random_state: 43
   
