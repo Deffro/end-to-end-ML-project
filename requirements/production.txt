@@ -1,4 +1,4 @@
--r research-env.txt
+-r requirements.txt
 
 tox==3.24.5
 pytest==7.0.1
