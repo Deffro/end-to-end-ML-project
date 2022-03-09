@@ -31,7 +31,7 @@ def save_pipeline(pipeline_to_persist: Pipeline) -> None:
     joblib.dump(pipeline_to_persist, save_path)
 
 
-def load_pipeline(*, file_name: str) -> Pipeline:
+def load_pipeline(file_name: str) -> Pipeline:
     """Load a persisted pipeline."""
 
     file_path = TRAINED_MODEL_DIR / file_name
@@ -39,7 +39,7 @@ def load_pipeline(*, file_name: str) -> Pipeline:
     return trained_model
 
 
-def remove_old_pipelines(*, files_to_keep: t.List[str]) -> None:
+def remove_old_pipelines(files_to_keep: t.List[str]) -> None:
     """
     Remove old model pipelines.
     This is to ensure there is a simple one-to-one
