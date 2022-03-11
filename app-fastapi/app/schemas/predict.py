@@ -39,9 +39,9 @@ class MultipleHouseDataInputs(BaseModel):
                         "enrolled_university": "Full time course",
                         "education_level": "Graduate",
                         "major_discipline": "STEM",
-                        "experience": "STEM",
+                        "experience": "9",
                         "company_size": "<10",
-                        "company_type": "",
+                        "company_type": "Funded Startup",
                         "last_new_job": "1",
                         "training_hours": 21
                     }
