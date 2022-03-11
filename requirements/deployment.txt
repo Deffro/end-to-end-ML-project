@@ -4,4 +4,4 @@
 fastapi==0.75.0
 uvicorn==0.17.5
 python-multipart==0.0.5
-typing_extensions==3.7.4
+typing_extensions==3.10.0
