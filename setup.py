@@ -32,9 +32,19 @@ with open(PACKAGE_DIR / "VERSION") as f:
 
 
 # What packages are required for this module to be executed?
-def list_reqs(fname="requirements.txt"):
+def list_reqs(fname="production.txt"):
     with open(REQUIREMENTS_DIR / fname) as fd:
-        return fd.read().splitlines()
+        reqs = fd.read().splitlines()
+    # remove empty line
+    reqs = list(filter(None, reqs))
+
+    # add the packages from the -r requirement.txt in production.txt
+    for req in reqs:
+        if '-r' in req:
+            with open(f"{REQUIREMENTS_DIR}/{req.split(' ')[1]}") as fd:
+                extra_reqs = fd.read().splitlines()
+            reqs.remove(req)
+    return extra_reqs+reqs
 
 
 # Where the magic happens:
