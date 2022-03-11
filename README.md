@@ -107,7 +107,12 @@ It can be imported like: ```import src```
 
 ### 4. Serve it via a REST API
 
-WIP
+The API should be a different repository or at least a different folder. Here it is located in the folder ```app-fastapi```.
+
+The first thing here is in the ```requirements.txt```, where we define to install the ```end-to-end-ML-project``` package,
+which we have published earlier.
+
+
 
 
 ### 5. Dockerize it and deploy it

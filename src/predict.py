@@ -13,9 +13,10 @@ def make_prediction(input_data) -> dict:
 
     data = pd.DataFrame(input_data)
 
-    predictions = trained_pipe.predict(
-        X=data.drop([config.model_config.target], axis=1)
-    )
+    if config.model_config.target in data.columns:
+        data = data.drop([config.model_config.target], axis=1)
+
+    predictions = trained_pipe.predict(X=data)
     results = {
         "predictions": [pred for pred in predictions],
         "version": _version,

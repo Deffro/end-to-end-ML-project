@@ -3,8 +3,8 @@ include *.md
 include *.pkl
 recursive-include ./src/*
 
-include src/datasets/train.csv
-include src/datasets/test.csv
+include src/data/train.csv
+include src/data/test.csv
 include src/trained_models/*.pkl
 include src/VERSION
 include src/config.yml
