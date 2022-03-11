@@ -1,0 +1,5 @@
+-r requirements.txt
+-r production.txt
+
+fastapi==0.75.0
+uvicorn==0.17.5
