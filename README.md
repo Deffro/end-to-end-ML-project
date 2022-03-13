@@ -11,6 +11,7 @@ end-to-end-ML-project
 │   setyp.py
 │   .gitignore
 │   tox.ini
+│   Dockerfile
 │
 └───notebooks
 │   │   1. Data Analysis.ipynb
@@ -49,6 +50,9 @@ end-to-end-ML-project
 │   │  
 │   └───trained_models 
 │   │   │   __init__.py  
+│
+└───app-fastapi
+│   ...
 ```
 
 ### Steps in An End-to-end ML Project
@@ -119,12 +123,33 @@ Three key files of the api are:
 - ```api.py```: Define a health and a predict endpoint.
 
 We define some ```schemas``` for automatic validation of variable types.
+We define some ```schemas``` for automatic validation of variable types.
 
 We also define ```tests``` with predefined input data to predict.
 
 We also use ```logging``` and the package ```loguru```.
 
+The ```Procfile``` and ```runtime.txt``` are necessary files to deploy on Heroku.
+
 
 ### 5. Dockerize it and deploy it
 
-WIP
+We create a ```Dockerfile``` and build the image:
+
+```docker build -t end-to-end-ML-project:latest .```
+
+We run the image:
+
+```docker run -p 8001:8001 -e PORT=8001 end-to-end-ml-project```
+
+We can see the output on localhost:8001/
+
+Now to deploy on Heroku, create a ```heroku.yml``` file.
+
+```
+heroku login
+heroku cointainer:login
+heroku container:push web --app end-to-end-ml-project
+heroku container:release web --app end-to-end-ml-project
+heroku open --app end-to-end-ml-project
+```

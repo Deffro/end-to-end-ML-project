@@ -1,0 +1,10 @@
+notebooks*
+*/env*
+*/venv*
+.circleci*
+packages/src
+*.env
+*.log
+.git
+.gitignore
+.tox
