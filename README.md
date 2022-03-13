@@ -118,7 +118,11 @@ Three key files of the api are:
 - ```main.py```: Define the main app and the index page router.
 - ```api.py```: Define a health and a predict endpoint.
 
+We define some ```schemas``` for automatic validation of variable types.
 
+We also define ```tests``` with predefined input data to predict.
+
+We also use ```logging``` and the package ```loguru```.
 
 
 ### 5. Dockerize it and deploy it

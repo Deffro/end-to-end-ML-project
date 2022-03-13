@@ -19,4 +19,3 @@ def client() -> Generator:
     with TestClient(app) as _client:
         yield _client
         app.dependency_overrides = {}
-        
