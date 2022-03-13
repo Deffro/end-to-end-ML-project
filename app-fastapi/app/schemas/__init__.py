@@ -1,2 +1,2 @@
 from .health import Health
-from .predict import MultipleHouseDataInputs, PredictionResults
+from .predict import MultipleDataInputs, PredictionResults

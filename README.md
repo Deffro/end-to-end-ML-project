@@ -112,6 +112,12 @@ The API should be a different repository or at least a different folder. Here it
 The first thing here is in the ```requirements.txt```, where we define to install the ```end-to-end-ML-project``` package,
 which we have published earlier.
 
+Three key files of the api are:
+
+- ```config.py```: Specify metadata of the api, and logging settings.
+- ```main.py```: Define the main app and the index page router.
+- ```api.py```: Define a health and a predict endpoint.
+
 
 
 

@@ -28,11 +28,11 @@ def health() -> dict:
 
 
 @api_router.post("/predict", response_model=schemas.PredictionResults, status_code=200)
-async def predict(input_data: schemas.MultipleHouseDataInputs) -> Any:
+async def predict(input_data: schemas.MultipleDataInputs) -> Any:
     """
-    Make house price predictions with the TID regression model
+    Make predictions with the end-to-end-ML-project model
     """
-
+    # load pydantic data
     input_df = pd.DataFrame(jsonable_encoder(input_data.inputs))
 
     # Advanced: You can improve performance of your API by rewriting the

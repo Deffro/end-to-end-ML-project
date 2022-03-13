@@ -24,7 +24,7 @@ class PredictionResults(BaseModel):
     predictions: Optional[List[float]]
 
 
-class MultipleHouseDataInputs(BaseModel):
+class MultipleDataInputs(BaseModel):
     inputs: List[DataInputSchema]
 
     class Config:

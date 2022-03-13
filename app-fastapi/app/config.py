@@ -26,7 +26,7 @@ class Settings(BaseSettings):
         "https://localhost:8000",  # type: ignore
     ]
 
-    PROJECT_NAME: str = "House Price Prediction API"
+    PROJECT_NAME: str = "End to End ML Project"
 
     class Config:
         case_sensitive = True
