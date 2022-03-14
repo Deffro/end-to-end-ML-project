@@ -5,6 +5,8 @@ This project aims to apply the best software engineering practices in a Machine 
 We are developing a model to predict if a Data Scientist is willing to leave his/her current job.
 We are not interested in the accuracy of the model (which is 77%), but rather to transition from the research environment to production code, packaging, and finally deployment of the model. 
 
+[https://end-to-end-ml-project.herokuapp.com/](https://end-to-end-ml-project.herokuapp.com/)
+
 <h2> Research Code ➙ Production Code ➙ Deployment </h2>
 
 <a href="https://www.python.org/" target="_blank"><img alt="Python" src="https://img.shields.io/badge/-Python-4B8BBE?style=flat-square&logo=python&logoColor=white" height="27"/></a>
