@@ -1,4 +1,21 @@
-## Research Code ➙ Production Code ➙ Deployment
+# End to End Machine Learning Project
+
+This project aims to apply the best software engineering practices in a Machine Learning project in order to deploy the model. 
+
+<h2> Research Code ➙ Production Code ➙ Deployment </h2>
+
+<a href="https://www.python.org/" target="_blank"><img alt="Python" src="https://img.shields.io/badge/-Python-4B8BBE?style=flat-square&logo=python&logoColor=white" height="27"/></a>
+<a href="https://scikit-learn.org/stable/index.html" target="_blank"><img alt="Scikit-learn" src="https://img.shields.io/badge/-Sklearn-fa9c3c?style=flat-square&logo=scikitlearn&logoColor=white" height="27"/></a>
+<a href="https://jupyter.org/" target="_blank"><img alt="Jupyter" src="https://img.shields.io/badge/-Jupyter-eb6c2d?style=flat-square&logo=jupyter&logoColor=white" height="27"/></a>
+<a href="https://www.anaconda.com/" target="_blank"><img alt="Anaconda" src="https://img.shields.io/badge/-Anaconda-3EB049?style=flat-square&logo=anaconda&logoColor=white" height="27"/></a>
+<a href="https://www.jetbrains.com/pycharm/" target="_blank"><img alt="PyCharm" src="https://img.shields.io/badge/-PyCharm-41c473?style=flat-square&logo=pycharm&logoColor=white" height="27"/></a>
+<a href="https://www.docker.com/" target="_blank"><img alt="Docker" src="https://img.shields.io/badge/-Docker-0db7ed?style=flat-square&logo=docker&logoColor=white" height="27"/></a>
+<a href="https://git-scm.com/" target="_blank"><img alt="Git" src="https://img.shields.io/badge/-Git-F1502F?style=flat-square&logo=git&logoColor=white" height="27"/></a>
+<a href="https://www.heroku.com/" target="_blank"><img alt="Heroku" src="https://img.shields.io/badge/-Heroku-430098?style=flat-square&logo=heroku&logoColor=white" height="27"/></a>
+<a href="https://fastapi.tiangolo.com/" target="_blank"><img alt="FastAPI" src="https://img.shields.io/badge/-FastAPI-35a691?style=flat-square&logo=fastapi&logoColor=white" height="27"/></a>
+<a href="https://docs.pytest.org/en/7.0.x/" target="_blank"><img alt="Pytest" src="https://img.shields.io/badge/-Pytest-ffd43b?style=flat-square&logo=pytest&logoColor=white" height="27"/></a>
+<a href="https://docs.pytest.org/en/7.0.x/" target="_blank"><img alt="tox" src="https://img.shields.io/badge/-tox-9dab35" height="27"/></a>
+
 
 ### Project Structure
 
