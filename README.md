@@ -7,6 +7,8 @@ We are not interested in the accuracy of the model (which is 77%), but rather to
 
 [https://end-to-end-ml-project.herokuapp.com/](https://end-to-end-ml-project.herokuapp.com/)
 
+I will continue building on this project and add more features.
+
 <h2> Research Code ➙ Production Code ➙ Deployment </h2>
 
 <a href="https://www.python.org/" target="_blank"><img alt="Python" src="https://img.shields.io/badge/-Python-4B8BBE?style=flat-square&logo=python&logoColor=white" height="27"/></a>
