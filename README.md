@@ -7,7 +7,7 @@ We are not interested in the accuracy of the model (which is 77%), but rather to
 
 [https://end-to-end-ml-project.herokuapp.com/](https://end-to-end-ml-project.herokuapp.com/)
 
-I will continue building on this project and add more features. WIP
+I will continue building on this project and add more features.
 
 <h2> Research Code ➙ Production Code ➙ Deployment </h2>
 
