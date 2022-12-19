@@ -7,7 +7,6 @@ We are not interested in the accuracy of the model (which is 77%), but rather to
 
 [https://end-to-end-ml-project.herokuapp.com/](https://end-to-end-ml-project.herokuapp.com/)
 
-I will continue building on this project and add more features.
 
 <h2> Research Code ➙ Production Code ➙ Deployment </h2>
 
@@ -92,7 +91,7 @@ end-to-end-ML-project
 The ```notebooks``` folder is the research which is often done by a Data Scientist.
 
 Usually a Data Analysis notebook for EDA and data understanding is the first step.
-Then, feature are created in a pipeline. Here, sciki-learn and feature-engine were used.
+Then, features are created in a pipeline. Here, sciki-learn and feature-engine were used.
 Finally, the ML model is placed at the end of the pipeline.
 
 Research can be very time-consuming. Here, a simple pipeline is created, 
